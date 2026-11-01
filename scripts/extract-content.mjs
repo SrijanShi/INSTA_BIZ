@@ -174,3 +174,11 @@ for (const s of Object.values(sections)) {
   s.media = (s.media ?? []).map((m) => (typeof m === "string" ? null : (mediaById.get(m.id) ?? m))).filter(Boolean);
 }
 write("sections.json", sections);
+
+// How it works: the two ways home (in Dubai / imported) and their steps.
+// RSC encodes undefined props as "$undefined"; drop those keys.
+const journeys = JSON.parse(
+  JSON.stringify(propAfter(rscPayload("how-it-works.html"), "journeys").value, (_, v) => (v === "$undefined" ? undefined : v)),
+);
+assertNoRefs("journeys", journeys);
+write("journeys.json", journeys);

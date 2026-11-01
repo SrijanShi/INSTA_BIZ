@@ -1,0 +1,53 @@
+[
+  {
+    "key": "local",
+    "label": "In Dubai",
+    "hint": "meet in person",
+    "heading": "Meet your puppy in person",
+    "body": "Step into our Downtown Dubai showroom and experience the joy of choosing your puppy face-to-face. We source healthy, well-socialized puppies from trusted local breeders, ensuring they're raised with care, proper nutrition, and veterinary checks.",
+    "steps": [
+      {
+        "text": "Browse our website to view the available puppies. Each listing includes photos, breed details, age, and health information.",
+        "title": "Explore our puppies"
+      },
+      {
+        "text": "Once you find a puppy you love, open their profile for more information or to enquire further. You can also reach out to us directly if you have any questions.",
+        "title": "Choose your puppy"
+      },
+      {
+        "text": "Spend time bonding before making your decision.",
+        "title": "Meet before you choose"
+      },
+      {
+        "text": "Pick up your puppy from us or have them delivered to your home within Dubai. Our delivery service is safe and reliable, ensuring your puppy arrives comfortably.",
+        "title": "Pick-up or delivery"
+      }
+    ]
+  },
+  {
+    "key": "imported",
+    "label": "Imported",
+    "hint": "order upon request",
+    "heading": "Order upon request",
+    "body": "Looking for a truly exceptional companion? Our Order Upon Request service gives you access to some of the world's most sought-after teacup breeds — ethically sourced from the most reputable, certified breeders across Europe, Korea, and beyond.",
+    "note": "From Korean teacup poodles to rare Maltese, Pom, and Yorkie lines, we bring the world's finest puppies to Dubai, just for you.",
+    "steps": [
+      {
+        "text": "Browse our selection of available breeds and place a reservation for the teacup puppy that captures your heart. Our reservation-only model ensures that each puppy is specifically sourced to meet your preferences.",
+        "title": "Reserve your puppy"
+      },
+      {
+        "text": "Once your reservation is confirmed, we will work closely with you to finalize details and provide updates on your puppy's journey.",
+        "title": "Personalized consultation"
+      },
+      {
+        "text": "We manage all aspects of the import process, including health checks, travel arrangements, and necessary documentation. Your puppy will be carefully transported and will arrive ready to join your family.",
+        "title": "Import and arrival"
+      },
+      {
+        "text": "Upon arrival, we provide support to help your new puppy acclimate to their new environment. Our team is available for any additional assistance and to ensure a smooth transition into your home.",
+        "title": "Welcome home"
+      }
+    ]
+  }
+]
