@@ -1,5 +1,6 @@
+import { getImageProps } from "next/image";
 import Link from "next/link";
-import { Flight } from "@/components/Flight";
+import { ScrollFlight } from "@/components/how/ScrollFlight";
 import { MediaImage } from "@/components/MediaImage";
 import { PupStop } from "@/components/mascot/PupStop";
 import { Scene, tones } from "@/components/Scene";
@@ -11,6 +12,7 @@ const SKYLINE =
 
 /** A signpost: visit the Dubai showroom, or have a puppy imported. */
 export function Paths({ showroom, imported }: { showroom: Media; imported: Puppy }) {
+  const { src: porthole } = getImageProps({ src: imported.cover.url, alt: "", width: 64, height: 64 }).props;
   return (
     <Scene tone={tones.paths} className="tp-paths" aria-labelledby="paths-title">
       <div className="gutter mx-auto max-w-[110rem]">
@@ -46,7 +48,10 @@ export function Paths({ showroom, imported }: { showroom: Media; imported: Puppy
               Imported for you
             </h3>
             <div className="tp-way__scene" data-pup-look>
-              <Flight pup={imported} />
+              <ScrollFlight
+                label={`A plane bringing a ${imported.displayName} puppy from Korea to Dubai`}
+                photoSrc={porthole}
+              />
             </div>
             <p className="tp-way__text">
               Exclusive Korean teacup puppies, delivered. Order from the world&apos;s most reputable breeders and let us

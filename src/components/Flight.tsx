@@ -1,6 +1,4 @@
-import { getImageProps } from "next/image";
-import { useId, type Ref } from "react";
-import type { Puppy } from "@/lib/content";
+import type { Ref } from "react";
 
 export const FLIGHT_ROUTE = "M40 250 C 170 40, 470 20, 620 168";
 
@@ -61,16 +59,5 @@ export function FlightSvg({
         )}
       </g>
     </svg>
-  );
-}
-
-/** Korea → Dubai flight with a puppy looking out of the porthole. */
-export function Flight({ pup }: { pup: Puppy }) {
-  const clipId = useId();
-  const { src } = getImageProps({ src: pup.cover.url, alt: "", width: 64, height: 64 }).props;
-  return (
-    <div className="tp-flight">
-      <FlightSvg label={`A plane bringing a ${pup.displayName} puppy from Korea to Dubai`} photoSrc={src} clipId={clipId} />
-    </div>
   );
 }

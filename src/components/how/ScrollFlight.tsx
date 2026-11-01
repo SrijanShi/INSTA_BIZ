@@ -5,8 +5,11 @@ import { useEffect, useId, useRef } from "react";
 import { FlightSvg } from "@/components/Flight";
 import { useReducedMotion } from "@/lib/motion";
 
-/** A plane that flies along the Korea → Dubai route as you scroll past it. */
-export function ScrollFlight({ label }: { label: string }) {
+/**
+ * A plane that flies along the Korea → Dubai route as you scroll past it,
+ * optionally with a puppy looking out of the porthole.
+ */
+export function ScrollFlight({ label, photoSrc }: { label: string; photoSrc?: string }) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const routeRef = useRef<SVGPathElement>(null);
   const planeRef = useRef<SVGGElement>(null);
@@ -35,7 +38,7 @@ export function ScrollFlight({ label }: { label: string }) {
 
   return (
     <div ref={wrapRef} className="tp-flight">
-      <FlightSvg label={label} clipId={clipId} routeRef={routeRef} planeRef={planeRef} />
+      <FlightSvg label={label} photoSrc={photoSrc} clipId={clipId} routeRef={routeRef} planeRef={planeRef} />
     </div>
   );
 }
