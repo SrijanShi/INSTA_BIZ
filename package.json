@@ -11,7 +11,8 @@
     "content:extract": "node scripts/extract-content.mjs",
     "media:fetch": "node scripts/fetch-media.mjs",
     "media:optimize": "node scripts/optimize-media.mjs",
-    "styles:port": "node scripts/port-styles.mjs"
+    "styles:port": "node scripts/port-styles.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "lenis": "1.3",
