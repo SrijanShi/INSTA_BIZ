@@ -122,7 +122,7 @@ const gone = tickets.map((ticket, i) => {
     gender: GENDERS[genderLabel],
     genderLabel,
     age: fact("Age") ?? "",
-    colour: "",
+    colour: fact("Colour") ?? "",
     description: "",
     records: [],
     status: "gone-home",

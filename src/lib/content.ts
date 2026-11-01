@@ -97,3 +97,13 @@ export function puppySummary(p: Puppy) {
 }
 
 export const hasVideo = (p: Puppy) => p.media.some((m) => m.kind === "video");
+
+/** "Max (Maltipoo)" for named puppies, otherwise the listing title. */
+export const enquiryLabel = (p: Puppy) => (p.name ? `${p.displayName} (${p.breed})` : p.displayName);
+
+/** Label in the contact form's puppy picker: "Max (Maltipoo, boy)". */
+export const optionLabel = (p: Puppy) =>
+  `${p.displayName} (${p.name ? `${p.breed}, ` : ""}${p.genderLabel.toLowerCase()})`;
+
+/** Where the puppy is (or was) — in the showroom or imported. */
+export const whereLabel = (p: Puppy) => (p.origin?.slug === "local" ? "In Dubai" : "Imported for you");
