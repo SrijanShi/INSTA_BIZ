@@ -1,0 +1,143 @@
+{
+  "meet": {
+    "key": "meet",
+    "heading": "Meet the pups",
+    "body": "Real puppies, real photos, looking for their families right now.",
+    "data": {
+      "ctaHref": "/puppies",
+      "ctaLabel": "See all available puppies"
+    },
+    "media": []
+  },
+  "journey": {
+    "key": "journey",
+    "heading": "Your puppy journey",
+    "body": "A premium, step-by-step concierge experience. We make adoption simple, secure, and purely joyful.",
+    "data": {
+      "items": [
+        {
+          "text": "Select your preferred breed or tell us what you're looking for. We'll guide you based on availability and your lifestyle.",
+          "title": "Choose your breed"
+        },
+        {
+          "text": "Our team will share real photos, health details, and all necessary information directly on WhatsApp.",
+          "title": "Get photos & details"
+        },
+        {
+          "text": "Once confirmed, we handle everything professionally and ensure your puppy reaches you safely and stress-free.",
+          "title": "Secure & safe delivery"
+        }
+      ],
+      "ctaHref": "/how-it-works",
+      "ctaLabel": "How it works",
+      "mediaIds": [
+        "FHyoHcIosLZE",
+        "Vi-kzyvemRl4",
+        "g_e4ebbc7fyG",
+        "skvodl2NZiKq",
+        "dSAUmXs8Qai9"
+      ]
+    },
+    "media": [
+      {
+        "id": "FHyoHcIosLZE",
+        "url": "/media/FHyoHcIosLZE/60f6e7e00a/27b888_323008bb0f6a41d4bde2a0da7206cd98f000.jpg",
+        "kind": "image",
+        "width": 1080,
+        "height": 1920,
+        "alt": "A tiny apricot teddy bear puppy held up in the TeddyPups showroom",
+        "caption": "",
+        "focalX": 0.543,
+        "focalY": 0.483,
+        "color": "#685848",
+        "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoJABAAA4BaJagCdAYsPa/VDxL9UAD3ijFiguQB2eFNqPYWHG7xQl6qNka061mi/fjBYY8RZf3XsP1kS88Rn71djwmYWvypWKajnQAPamia5Uxpl7StGuPRQAA=",
+        "durationS": null,
+        "poster": null
+      },
+      {
+        "id": "Vi-kzyvemRl4",
+        "url": "/media/Vi-kzyvemRl4/e740ed8a24/27b888_323008bb0f6a41d4bde2a0da7206cd98f001.jpg",
+        "kind": "image",
+        "width": 1080,
+        "height": 1920,
+        "alt": "The apricot teddy bear puppy from our showroom, close up",
+        "caption": "",
+        "focalX": 0.46,
+        "focalY": 0.444,
+        "color": "#685848",
+        "blurDataUrl": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwAgCdASoJABAAA4BaJbACdAYulaXCmQDQAADfhiF+Ktn7reztFQp53jgf/NMeaIMaQ509IW5fc59BS8HJxLDTXLbfTZv6eU+nlZ8rte63C1bCNZrnQSnGo8AAAA==",
+        "durationS": null,
+        "poster": null
+      },
+      {
+        "id": "g_e4ebbc7fyG",
+        "url": "/media/g_e4ebbc7fyG/8276289ae7/27b888_323008bb0f6a41d4bde2a0da7206cd98f002.jpg",
+        "kind": "image",
+        "width": 1080,
+        "height": 1920,
+        "alt": "The apricot teddy bear puppy from our showroom, looking up",
+        "caption": "",
+        "focalX": 0.437,
+        "focalY": 0.402,
+        "color": "#080818",
+        "blurDataUrl": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADwAQCdASoJABAAA4BaJbACdADcV8YgXoAA/IlXZyFLf/thAj7OWEY0SeDLuiZIyZ9j3rjOwzrKQHktciqrqLiqs+3bHHqiIi4ewyT8UjeAM0NGWglOcDueIQIAAA==",
+        "durationS": null,
+        "poster": null
+      },
+      {
+        "id": "skvodl2NZiKq",
+        "url": "/media/skvodl2NZiKq/cefab5eee9/27b888_323008bb0f6a41d4bde2a0da7206cd98f003.jpg",
+        "kind": "image",
+        "width": 1080,
+        "height": 1920,
+        "alt": "The apricot teddy bear puppy from our showroom, held up to say hello",
+        "caption": "",
+        "focalX": 0.453,
+        "focalY": 0.444,
+        "color": "#685848",
+        "blurDataUrl": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAwAgCdASoJABAAA4BaJbACdAYtza4BbcHsAADiF1VEqDVt16ac+uAmdBB2LI4q3G/6Bl/9tetZIF+8zMdSr3JKQa/JOA7nZQIC4SJVG9giEvNF2iUQveGdBkyGxtAA",
+        "durationS": null,
+        "poster": null
+      },
+      {
+        "id": "dSAUmXs8Qai9",
+        "url": "/media/dSAUmXs8Qai9/ef39cbea20/27b888_323008bb0f6a41d4bde2a0da7206cd98-720p.mp4",
+        "kind": "video",
+        "width": 406,
+        "height": 720,
+        "alt": "Video of a tiny apricot teddy bear puppy in the TeddyPups showroom",
+        "caption": "",
+        "focalX": 0.5,
+        "focalY": 0.4,
+        "color": "#f2be6b",
+        "blurDataUrl": null,
+        "durationS": 15.581,
+        "poster": {
+          "id": "FHyoHcIosLZE",
+          "url": "/media/FHyoHcIosLZE/60f6e7e00a/27b888_323008bb0f6a41d4bde2a0da7206cd98f000.jpg",
+          "kind": "image",
+          "width": 1080,
+          "height": 1920,
+          "alt": "A tiny apricot teddy bear puppy held up in the TeddyPups showroom",
+          "caption": "",
+          "focalX": 0.543,
+          "focalY": 0.483,
+          "color": "#685848",
+          "blurDataUrl": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwAgCdASoJABAAA4BaJagCdAYsPa/VDxL9UAD3ijFiguQB2eFNqPYWHG7xQl6qNka061mi/fjBYY8RZf3XsP1kS88Rn71djwmYWvypWKajnQAPamia5Uxpl7StGuPRQAA=",
+          "durationS": null,
+          "poster": null
+        }
+      }
+    ]
+  },
+  "families": {
+    "key": "families",
+    "heading": "Happy families & puppies",
+    "body": "We are truly honored to see our puppies become cherished members of loving families. These heartwarming moments have been shared by our valued clients who welcomed a Teddy Pup into their homes and hearts.",
+    "data": {
+      "ctaHref": "/happy-families",
+      "ctaLabel": "See every happy family"
+    },
+    "media": []
+  }
+}

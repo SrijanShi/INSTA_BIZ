@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "maltipoo",
+    "name": "Maltipoo"
+  },
+  {
+    "slug": "pomeranian",
+    "name": "Pomeranian"
+  },
+  {
+    "slug": "poodle",
+    "name": "Poodle"
+  },
+  {
+    "slug": "cavapoo",
+    "name": "Cavapoo"
+  },
+  {
+    "slug": "shih-tzu",
+    "name": "Shih Tzu"
+  },
+  {
+    "slug": "maltese",
+    "name": "Maltese"
+  },
+  {
+    "slug": "bichon",
+    "name": "Bichon"
+  },
+  {
+    "slug": "pomsky",
+    "name": "Pomsky"
+  }
+]
