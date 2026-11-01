@@ -1,0 +1,181 @@
+.tp-gone-stamp {
+  transform: rotate(-10deg);
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .tp-gone-stamp {
+    animation: none!important;
+  }
+}
+
+.tp-gone-strip {
+  background: radial-gradient(circle at 1px 1px, #2a170e14 1px, transparent 1.6px) 0 0 / 26px 26px, var(--color-honey-soft);
+  padding-block: clamp(4rem,9vh,6rem);
+}
+
+.tp-gone-strip__row {
+  flex: 1;
+  grid-template-columns: repeat(auto-fill,minmax(7.5rem,1fr));
+  gap: 2rem 1.5rem;
+  display: grid;
+}
+
+.tp-gone-strip__row .tp-sketch__photo {
+  filter: saturate(.75)sepia(.12);
+}
+
+.tp-tickets {
+  grid-template-columns: repeat(auto-fill,minmax(min(100%,21rem),1fr));
+  gap: 2.25rem 1.75rem;
+  margin-top: clamp(3rem,7vw,5rem);
+  display: grid;
+}
+
+.tp-ticket {
+  rotate: var(--tilt);
+  transition: rotate .45s var(--ease-pounce);
+}
+
+.tp-ticket:hover {
+  rotate: 0deg;
+}
+
+.tp-ticket__link {
+  filter: drop-shadow(5px 7px #2a170e29);
+  min-height: 9.5rem;
+  transition: translate .45s var(--ease-pounce), filter .45s var(--ease-silk);
+  border-radius: 1rem;
+  display: flex;
+  position: relative;
+}
+
+.tp-ticket__link:hover {
+  filter: drop-shadow(8px 12px #2a170e2e);
+  translate: 0 -4px;
+}
+
+.tp-ticket__main,
+.tp-ticket__stub {
+  border: 3px solid var(--color-cocoa);
+  background: #fff8ea;
+  position: relative;
+}
+
+.tp-ticket__main {
+  border-right: 0;
+  border-radius: 1rem 0 0 1rem;
+  flex: 1;
+  align-items: center;
+  gap: 1rem;
+  min-width: 0;
+  padding: .95rem 1rem .95rem .95rem;
+  display: flex;
+  -webkit-mask: radial-gradient(circle at 100% 0,#0000 .62rem,#000 .66rem) 100% 0/51% 51% no-repeat,radial-gradient(circle at 100% 100%,#0000 .62rem,#000 .66rem) 100% 100%/51% 51% no-repeat,linear-gradient(#000,#000) 0/50% 100% no-repeat;
+  mask: radial-gradient(circle at 100% 0,#0000 .62rem,#000 .66rem) 100% 0/51% 51% no-repeat,radial-gradient(circle at 100% 100%,#0000 .62rem,#000 .66rem) 100% 100%/51% 51% no-repeat,linear-gradient(#000,#000) 0/50% 100% no-repeat;
+}
+
+.tp-ticket__photo {
+  aspect-ratio: 1;
+  border: 3px solid var(--color-cocoa);
+  background: var(--color-honey-soft);
+  border-radius: 50%;
+  flex: none;
+  width: clamp(5.4rem,22vw,6.6rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.tp-ticket__body {
+  gap: .1rem;
+  min-width: 0;
+  display: grid;
+}
+
+.tp-ticket__kicker {
+  color: var(--color-toffee-ink);
+  font-size: .9rem;
+}
+
+.tp-ticket__name {
+  text-overflow: ellipsis;
+  font-size: clamp(1.4rem,2vw,1.75rem);
+  line-height: 1.05;
+  overflow: hidden;
+}
+
+.tp-ticket__meta {
+  color: var(--color-cocoa-soft);
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.tp-ticket__route {
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--color-cocoa);
+  align-items: center;
+  gap: .45rem;
+  margin-top: .4rem;
+  font-size: .82rem;
+  font-weight: 700;
+  display: flex;
+}
+
+.tp-ticket__route svg {
+  fill: none;
+  width: 2.6rem;
+  stroke: var(--color-toffee-deep);
+  stroke-width: 2.4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 3 4;
+}
+
+.tp-ticket__route svg path+path {
+  stroke-dasharray: none;
+}
+
+.tp-ticket__stub {
+  background: var(--color-honey);
+  transform-origin: 0 0;
+  width: 3.4rem;
+  transition: rotate .5s var(--ease-pounce);
+  border-left: 3px dashed #2a170e8c;
+  border-radius: 0 1rem 1rem 0;
+  flex: none;
+  place-items: center;
+  display: grid;
+  -webkit-mask: radial-gradient(circle at 0 0,#0000 .62rem,#000 .66rem) 0 0/51% 51% no-repeat,radial-gradient(circle at 0 100%,#0000 .62rem,#000 .66rem) 0 100%/51% 51% no-repeat,linear-gradient(#000,#000) 100%/50% 100% no-repeat;
+  mask: radial-gradient(circle at 0 0,#0000 .62rem,#000 .66rem) 0 0/51% 51% no-repeat,radial-gradient(circle at 0 100%,#0000 .62rem,#000 .66rem) 0 100%/51% 51% no-repeat,linear-gradient(#000,#000) 100%/50% 100% no-repeat;
+}
+
+.tp-ticket__stub span {
+  writing-mode: vertical-rl;
+  letter-spacing: .06em;
+  color: var(--color-cocoa);
+  font-size: 1rem;
+  rotate: 180deg;
+}
+
+.tp-ticket__link:hover .tp-ticket__stub {
+  rotate: 7deg;
+}
+
+.tp-ticket[data-armed]:not([data-revealed]) .tp-ticket__link {
+  clip-path: inset(0 0 100%);
+  translate: 0 -.9rem;
+}
+
+.tp-ticket[data-armed] .tp-ticket__link {
+  transition: clip-path .7s var(--ease-silk) calc(var(--i) * 80ms), translate .7s var(--ease-silk) calc(var(--i) * 80ms), filter .45s var(--ease-silk);
+}
+
+.tp-ticket[data-revealed] .tp-ticket__link {
+  clip-path: inset(-2rem);
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .tp-ticket,.tp-ticket__link,.tp-ticket__stub {
+    transition: none!important;
+  }
+}

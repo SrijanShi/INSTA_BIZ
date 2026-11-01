@@ -1,26 +1,20 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "../styles/theme.css";
+@import "../styles/base.css";
+@import "../styles/components.css";
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Site-wide behaviour: paw cursor, reduced motion, smooth scroll, mascot. */
+@import "../styles/global.css";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Feature styles, ported from the reference site's component layer. */
+@import "../styles/shell.css";
+@import "../styles/home.css";
+@import "../styles/puppies.css";
+@import "../styles/puppy.css";
+@import "../styles/families.css";
+@import "../styles/gone-home.css";
+@import "../styles/how-it-works.css";
+@import "../styles/faq.css";
+@import "../styles/contact.css";
+@import "../styles/not-found.css";

@@ -1,0 +1,56 @@
+@layer base {
+  :root {
+    color-scheme: light;
+    /* Horizontal page padding used by the `gutter` utility. */
+    --gutter: clamp(1rem, 4vw, 3.5rem);
+    --header-h: 4.75rem;
+    /* Height of the mobile WhatsApp/Call bar (0 on desktop). */
+    --bar-h: 0px;
+    accent-color: var(--color-toffee-deep);
+  }
+
+  html {
+    scrollbar-gutter: stable;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+    scroll-padding-top: calc(var(--header-h) + 1rem);
+    overflow-x: clip;
+  }
+
+  body {
+    background: var(--color-milk);
+    color: var(--color-cocoa);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: var(--color-honey);
+    color: var(--color-cocoa);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-toffee-deep);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  @media (max-width: 767px) {
+    :root {
+      --header-h: 4rem;
+      --bar-h: calc(4rem + env(safe-area-inset-bottom));
+    }
+  }
+}
