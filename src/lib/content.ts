@@ -75,6 +75,12 @@ export const getPuppy = (slug: string) => puppies.find((p) => p.slug === slug);
 /** Breeds offered as filters, in the CMS order. */
 export const getBreeds = () => breedsData as Taxon[];
 
+/** Breeds that currently have at least one puppy available. */
+export const getAvailableBreeds = () => {
+  const available = getAvailablePuppies();
+  return getBreeds().filter((b) => available.some((p) => p.breeds.some((pb) => pb.slug === b.slug)));
+};
+
 export const getFamilyPhotos = () => familiesData as Media[];
 
 export const getFaqs = () => faqsData as Faq[];

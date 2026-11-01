@@ -21,6 +21,14 @@ export const site = {
   ],
 } as const;
 
+/** Featured on the home page and the happy families wall. */
+export const testimonial = {
+  quote:
+    "TeddyPups truly made our dream a reality. They supported us at every step of the import journey. Our Maltipoo arrived healthy, cheerful, and absolutely perfect. Having 24/7 support throughout the process gave us complete peace of mind.",
+  author: "Sarah M.",
+  location: "Dubai, UAE",
+};
+
 export const nav = [
   { href: "/", label: "Home" },
   { href: "/puppies", label: "Puppies" },

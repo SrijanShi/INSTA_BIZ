@@ -24,17 +24,17 @@ export function SparkleIcon(props: SVGProps<SVGSVGElement>) {
 /** A scatter of twinkling sparkles, positioned in percentages of the parent. */
 export function Twinkles({
   stars,
-  className = "tp-twinkle absolute text-honey",
+  className = "pointer-events-none absolute inset-0",
 }: {
   stars: [left: number, top: number, size: number][];
   className?: string;
 }) {
   return (
-    <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+    <div aria-hidden="true" className={className}>
       {stars.map(([left, top, size], i) => (
         <SparkleIcon
           key={i}
-          className={className}
+          className="tp-twinkle absolute text-honey"
           style={{ left: `${left}%`, top: `${top}%`, width: `${size}px`, animationDelay: `${(i * 0.4).toFixed(2)}s` }}
         />
       ))}
