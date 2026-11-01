@@ -6,6 +6,7 @@ import { Meet } from "@/components/home/Meet";
 import { Night } from "@/components/home/Night";
 import { Passport } from "@/components/home/Passport";
 import { Paths } from "@/components/home/Paths";
+import { PupJourney } from "@/components/home/PupJourney";
 import { RevealScope } from "@/components/RevealScope";
 import { getAvailableBreeds, getAvailablePuppies, getFamilyPhotos, getFaqs, getSection } from "@/lib/content";
 import { site, siteUrl, testimonial } from "@/lib/site";
@@ -47,6 +48,7 @@ export default function HomePage() {
       <Dusk section={getSection("families")} photos={wallPhotos} testimonial={testimonial} />
       <Night faqs={getFaqs().slice(0, 3)} />
       <HomeCta waiting={puppies[0]} />
+      <PupJourney />
     </RevealScope>
   );
 }
