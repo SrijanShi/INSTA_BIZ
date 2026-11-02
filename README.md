@@ -5,7 +5,6 @@ A rebuild of [puppy.instabizweb.com](https://puppy.instabizweb.com/) made for th
 - Live site: https://teddypups-insta-biz.vercel.app
 - Repository: https://github.com/SrijanShi/INSTA_BIZ
 - How it was built (process log, AI tools and exact prompts): [docs/PROCESS.md](docs/PROCESS.md)
-- Video walkthrough outline: [docs/LOOM_SCRIPT.md](docs/LOOM_SCRIPT.md)
 
 ![Home page](docs/screenshot-home.png)
 
@@ -91,7 +90,7 @@ src/
   styles/               theme tokens, base, and one CSS file per feature
 scripts/                content extraction, media download/optimisation, style port
 tests/e2e/              Playwright specs
-docs/                   process log and video outline
+docs/                   process log and screenshot
 ```
 
 ## Testing
